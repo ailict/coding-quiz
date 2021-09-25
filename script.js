@@ -11,11 +11,11 @@ var option4 = document.getElementById("button4");
 
 var startButton = document.getElementById("start-button");
 
-var previousButton = document.getElementById("previous");
+// var previousButton = document.getElementById("previous");
 
-var nextButton = document.getElementById("next");
+// var nextButton = document.getElementById("next");
 
-var submitQuizButton = document.getElementById("submit-quiz");
+// var submitQuizButton = document.getElementById("submit-quiz");
 
 var submitInitialsButton = document.getElementById("submit-initials-button");
 
@@ -42,15 +42,26 @@ var questions = [
     answer: "4. console.log"
   }];
 
-var questionLog = 0;
+questionLog = 0;
 
-function currentQuestion() {
-    $("#current-question").text(questions[questionLog].question)
-    $("#button1").text(questions[questionLog].options[0])
-    $("#button2").text(questions[questionLog].options[1])
-    $("#button3").text(questions[questionLog].options[2])
-    $("#button4").text(questions[questionLog].options[3])
+function currentQuestion (){
+        $("#current-question").text(questions[questionLog].question);
+        $("#button1").text(questions[questionLog].options[0]);
+        $("#button2").text(questions[questionLog].options[1]);
+        $("#button3").text(questions[questionLog].options[2]);
+        $("#button4").text(questions[questionLog].options[3]);
 }
+
+function startQuiz(){
+    questionLog++;
+    if(questionLog<questions.length){
+        currentQuestion();
+    } else {
+        console.log("test");
+    }
+}
+
+
 
 
  //function to show results
