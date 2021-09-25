@@ -45,24 +45,7 @@ var questionsArray = [
     answer: "4. console.log"
   }];
 
-questionLog = 0;
 
-// function currentQuestion (){
-//         $("#current-question").text(questions[questionLog].question);
-//         $("#button1").text(questions[questionLog].options[0]);
-//         $("#button2").text(questions[questionLog].options[1]);
-//         $("#button3").text(questions[questionLog].options[2]);
-//         $("#button4").text(questions[questionLog].options[3]);
-// }
-
-// function startQuiz(){
-//     questionLog++;
-//     if(questionLog<questions.length){
-//         currentQuestion();
-//     } else {
-//         console.log("test");
-//     }
-// }
 var correctAnswer;
 var num=0;
 function populateQuestion() {
@@ -88,16 +71,5 @@ function populateQuestion() {
     }
   });
 
-
- //function to show results
-function showResults (){}
-
- //display quiz right away
-//  buildQuiz();
-
- //on submit, show results
-//  submitQuizButton.addEventListener('click', showResults);
-
- //listeners
  startButton.addEventListener("click", populateQuestion)
 
