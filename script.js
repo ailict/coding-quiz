@@ -36,12 +36,15 @@ var questions = [
     answer: "4. console.log"
   }];
 
-  //need a function that starts the quiz - maybe starting quiz and calling array is 1
+ //function to start quiz
+function startQuiz (){}
 
+ //function to show results
+function showResults (){}
 
-  //need a function that calls questions array, scores choices
+ //display quiz right away
+ buildQuiz();
 
-  
-  //need a function that starts timer & counts down & subtracts time for wrong questions so it probably needs to call the scoring function, I wonder if scoring function should be separate from questions array? 
-
-  //need to store inputs from score and log with initials into a record, sort high score view by highest records 
+ //on submit, show results
+ submitQuizButton.addEventListener('click', showResults);
+ 
