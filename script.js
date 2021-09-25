@@ -14,6 +14,7 @@ var option4 = document.getElementById("button4");
 
 var startButton = document.getElementById("start-button");
 
+var isDone = false;
 // var previousButton = document.getElementById("previous");
 
 // var nextButton = document.getElementById("next");
@@ -59,7 +60,7 @@ function populateQuestion() {
 
   quiz.addEventListener("click", function (event) {
     var element = event.target;
-    if (element.matches($correctAnswer)) {
+        if (element = questionsArray[num].answer){
       num++;
       if (num < questionsArray.length) {
         populateQuestion();
