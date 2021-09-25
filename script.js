@@ -3,6 +3,11 @@ var viewHighscoresAnchor = Document.getElementById("view-highscores");
 
 var timer = "tbd";
 
+var option1 = Document.getElementById("button1");
+var option2 = Document.getElementById("button2");
+var option3 = Document.getElementById("button3");
+var option4 = Document.getElementById("button4");
+
 var startButton = Document.getElementById("start-button");
 
 var previousButton = Document.getElementById("previous");
