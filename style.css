@@ -5,3 +5,11 @@
 #intro {
     text-align: center;
 }
+
+button {
+    background-color: #da077b;
+    color:#fff;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 8px;
+}
