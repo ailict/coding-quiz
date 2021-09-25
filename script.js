@@ -1,22 +1,23 @@
 //variable setup
-var viewHighscoresAnchor = Document.getElementById("view-highscores");
+var viewHighscoresAnchor = document.getElementById("view-highscores");
 
 var timer = "tbd";
 
-var option1 = Document.getElementById("button1");
-var option2 = Document.getElementById("button2");
-var option3 = Document.getElementById("button3");
-var option4 = Document.getElementById("button4");
+var currentQuestion = document.getElementById("current-question")
+var option1 = document.getElementById("button1");
+var option2 = document.getElementById("button2");
+var option3 = document.getElementById("button3");
+var option4 = document.getElementById("button4");
 
-var startButton = Document.getElementById("start-button");
+var startButton = document.getElementById("start-button");
 
-var previousButton = Document.getElementById("previous");
+var previousButton = document.getElementById("previous");
 
-var nextButton = Document.getElementById("next");
+var nextButton = document.getElementById("next");
 
-var submitQuizButton = Document.getElementById("submit-quiz");
+var submitQuizButton = document.getElementById("submit-quiz");
 
-var submitInitialsButton = Document.getElementById("submit-initials-button");
+var submitInitialsButton = document.getElementById("submit-initials-button");
 
 var questions = [
     {
@@ -56,8 +57,11 @@ function currentQuestion() {
 function showResults (){}
 
  //display quiz right away
- buildQuiz();
+//  buildQuiz();
 
  //on submit, show results
  submitQuizButton.addEventListener('click', showResults);
+
+ //listeners
+ startButton.addEventListener("click", currentQuestion)
 
