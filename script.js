@@ -3,11 +3,14 @@ var viewHighscoresAnchor = document.getElementById("view-highscores");
 
 var timer = "tbd";
 
-var currentQuestion = document.getElementById("current-question")
+var quiz = document.getElementById("quiz");
+
+var currentQuestion = document.getElementById("current-question");
 var option1 = document.getElementById("button1");
 var option2 = document.getElementById("button2");
 var option3 = document.getElementById("button3");
 var option4 = document.getElementById("button4");
+var correctAnswer;
 
 var startButton = document.getElementById("start-button");
 
@@ -19,7 +22,7 @@ var startButton = document.getElementById("start-button");
 
 var submitInitialsButton = document.getElementById("submit-initials-button");
 
-var questions = [
+var questionsArray = [
     {
     question: "Commonly used data types do NOT include:",
     options: ["1. strings", "2. booleans", "3. alerts", "4. numbers"],
@@ -44,24 +47,48 @@ var questions = [
 
 questionLog = 0;
 
-function currentQuestion (){
-        $("#current-question").text(questions[questionLog].question);
-        $("#button1").text(questions[questionLog].options[0]);
-        $("#button2").text(questions[questionLog].options[1]);
-        $("#button3").text(questions[questionLog].options[2]);
-        $("#button4").text(questions[questionLog].options[3]);
-}
+// function currentQuestion (){
+//         $("#current-question").text(questions[questionLog].question);
+//         $("#button1").text(questions[questionLog].options[0]);
+//         $("#button2").text(questions[questionLog].options[1]);
+//         $("#button3").text(questions[questionLog].options[2]);
+//         $("#button4").text(questions[questionLog].options[3]);
+// }
 
-function startQuiz(){
-    questionLog++;
-    if(questionLog<questions.length){
-        currentQuestion();
+// function startQuiz(){
+//     questionLog++;
+//     if(questionLog<questions.length){
+//         currentQuestion();
+//     } else {
+//         console.log("test");
+//     }
+// }
+
+var num=0;
+function populateQuestion() {
+    currentQuestion.textContent = questionsArray[num].question;
+    option1.textContent = questionsArray[num].options[0];
+    option2.textContent = questionsArray[num].options[1];
+    option3.textContent = questionsArray[num].options[2];
+    option4.textContent = questionsArray[num].options[3];
+    correctAnswer = questionsArray[num].answer;
+  };
+
+
+  
+  quiz.addEventListener("click", function (event) {
+    var element = event.target;
+    if (element.matches(correctAnswer) {
+      num++;
+      if (num < questionsArray.length) {
+        populateQuestion();
+      } else {
+        isDone = true;
+      }
     } else {
-        console.log("test");
+      timerCount = timerCount - 10;
     }
-}
-
-
+  });
 
 
  //function to show results
@@ -71,8 +98,8 @@ function showResults (){}
 //  buildQuiz();
 
  //on submit, show results
- submitQuizButton.addEventListener('click', showResults);
+//  submitQuizButton.addEventListener('click', showResults);
 
  //listeners
- startButton.addEventListener("click", currentQuestion)
+ startButton.addEventListener("click", populateQuestion)
 
