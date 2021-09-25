@@ -41,42 +41,14 @@ var questions = [
     answer: "4. console.log"
   }];
 
-//  //function to start quiz
-// function startQuiz (){
-//     //store HTML output
-//     var output = [];
+var questionLog = 0;
 
-//     //for each question
-//     questions.forEach(
-//         (currentQuestion, questionNumber) => {
-//             //variable to store list of possible answers
-//             var options = [];
-
-//             //and for each available answer...
-//             for()
-
-//         }
-//     )
-// }
-
-
-function currentQuestion(){
-    var curQuestion = questions.question;
-    $("#current-question").text(question);
-
-    var opt1 = questions.options[0];
-    $("#button1").text(opt1);
-
-    var opt2 = questions.options[1];
-    $("#button2").text(opt2);
-
-    var opt3 = questions.options[2];
-    $("#button3").text(opt3);
-
-    var opt4 = questions.options[4];;
-    $("#button4").text(opt4);
-
-    console.log("current index pos: " + questionIndexPos);
+function currentQuestion() {
+    $("#current-question").text(questions[questionLog].question)
+    $("#button1").text(questions[questionLog].options[0])
+    $("#button2").text(questions[questionLog].options[1])
+    $("#button3").text(questions[questionLog].options[2])
+    $("#button4").text(questions[questionLog].options[3])
 }
 
 
