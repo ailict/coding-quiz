@@ -10,7 +10,7 @@ var option1 = document.getElementById("button1");
 var option2 = document.getElementById("button2");
 var option3 = document.getElementById("button3");
 var option4 = document.getElementById("button4");
-var correctAnswer;
+
 
 var startButton = document.getElementById("start-button");
 
@@ -63,7 +63,7 @@ questionLog = 0;
 //         console.log("test");
 //     }
 // }
-
+var correctAnswer;
 var num=0;
 function populateQuestion() {
     currentQuestion.textContent = questionsArray[num].question;
@@ -74,11 +74,9 @@ function populateQuestion() {
     correctAnswer = questionsArray[num].answer;
   };
 
-
-  
   quiz.addEventListener("click", function (event) {
     var element = event.target;
-    if (element.matches(correctAnswer) {
+    if (element.matches($correctAnswer)) {
       num++;
       if (num < questionsArray.length) {
         populateQuestion();
