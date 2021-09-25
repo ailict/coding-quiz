@@ -1,3 +1,12 @@
+//variable setup
+var viewHighscoresAnchor = Document.getElementById("view-highscores");
+
+var timer = "tbd";
+
+var startButton = Document.getElementById("start-button");
+
+var submitButton = Document.getElementById("submit-button");
+
 var questions = [
     {
     question: "Commonly used data types do NOT include:",
