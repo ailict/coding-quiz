@@ -5,7 +5,13 @@ var timer = "tbd";
 
 var startButton = Document.getElementById("start-button");
 
-var submitButton = Document.getElementById("submit-button");
+var previousButton = Document.getElementById("previous");
+
+var nextButton = Document.getElementById("next");
+
+var submitQuizButton = Document.getElementById("submit-quiz");
+
+var submitInitialsButton = Document.getElementById("submit-initials-button");
 
 var questions = [
     {
@@ -28,4 +34,14 @@ var questions = [
     question: "A very useful tool used during development and debugging for printing content to the debugger is:",
     options: ["1. JavaScript", "2. terminal/bash", "3. for loops", "4. console.log"],
     answer: "4. console.log"
-  }]
+  }];
+
+  //need a function that starts the quiz - maybe starting quiz and calling array is 1
+
+
+  //need a function that calls questions array, scores choices
+
+  
+  //need a function that starts timer & counts down & subtracts time for wrong questions so it probably needs to call the scoring function, I wonder if scoring function should be separate from questions array? 
+
+  //need to store inputs from score and log with initials into a record, sort high score view by highest records 
