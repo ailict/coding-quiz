@@ -37,7 +37,23 @@ var questions = [
   }];
 
  //function to start quiz
-function startQuiz (){}
+function startQuiz (){
+    //store HTML output
+    var output = [];
+
+    //for each question
+    questions.forEach(
+        (currentQuestion, questionNumber) => {
+            //variable to store list of possible answers
+            var options = [];
+
+            //and for each available answer...
+            for()
+
+        }
+    )
+}
+
 
  //function to show results
 function showResults (){}
@@ -47,4 +63,4 @@ function showResults (){}
 
  //on submit, show results
  submitQuizButton.addEventListener('click', showResults);
- 
+
