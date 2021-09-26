@@ -1,7 +1,7 @@
 //variable setup
 var viewHighscoresAnchor = document.getElementById("view-highscores");
 
-var timer = "tbd";
+var timer = document.querySelector(".time");
 
 var quiz = document.getElementById("quiz");
 
