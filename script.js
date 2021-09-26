@@ -3,6 +3,10 @@ var viewHighscoresAnchor = document.getElementById("view-highscores");
 
 var timer = document.querySelector(".time");
 
+document.getElementById("intro").style.display = "block";
+var intro = document.getElementById("intro");
+
+document.getElementById("quiz").style.display = "none";
 var quiz = document.getElementById("quiz");
 
 var currentQuestion = document.getElementById("current-question");
@@ -11,10 +15,12 @@ var option2 = document.getElementById("button2");
 var option3 = document.getElementById("button3");
 var option4 = document.getElementById("button4");
 
-
 var startButton = document.getElementById("start-button");
 
 var isDone = false;
+
+document.getElementById("final-score-section").style.display = "none";
+var finalSection = document.getElementById("final-score-section");
 
 var submitInitialsButton = document.getElementById("submit-initials-button");
 
@@ -41,6 +47,11 @@ var questionsArray = [
     answer: "4. console.log"
   }];
 
+function startQuiz() {
+    document.getElementById("intro").style.display = "none";
+    document.getElementById("quiz").style.display = "block";    
+    populateQuestion();
+  };
 
 var correctAnswer;
 var num=0;
@@ -67,5 +78,5 @@ function populateQuestion() {
     }
   });
 
- startButton.addEventListener("click", populateQuestion)
+ startButton.addEventListener("click", startQuiz)
 
