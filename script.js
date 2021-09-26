@@ -15,11 +15,6 @@ var option4 = document.getElementById("button4");
 var startButton = document.getElementById("start-button");
 
 var isDone = false;
-// var previousButton = document.getElementById("previous");
-
-// var nextButton = document.getElementById("next");
-
-// var submitQuizButton = document.getElementById("submit-quiz");
 
 var submitInitialsButton = document.getElementById("submit-initials-button");
 
