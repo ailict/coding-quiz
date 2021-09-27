@@ -1,20 +1,11 @@
 # coding-quiz
-This is a timed javascript coding quiz
+This is a timed javascript coding quiz. 
 
-User Story: 
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
+Upon clicking the start button, users should be presented with questions, and when they answer incorrectly, time is subtracted from the timer. When all questions or timer reaches 0, the game is over, and user should save their initials and score. 
 
-Acceptance Criteria: 
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
+This repository uses CSS, Javascript, and HTML. 
+
+The github link for this repository is: https://github.com/ailict/coding-quiz
+
+This website is deployed live at: https://ailict.github.io/coding-quiz/
+
