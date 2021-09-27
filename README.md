@@ -9,3 +9,6 @@ The github link for this repository is: https://github.com/ailict/coding-quiz
 
 This website is deployed live at: https://ailict.github.io/coding-quiz/
 
+<img src="./assets/images/codingquiz1.png">
+
+<img src="./assets/images/codingquiz2.png">
